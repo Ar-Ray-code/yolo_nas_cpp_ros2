@@ -12,7 +12,7 @@ YOLO-NAS & ONNX & ROS 2
 ```bash
 mkdir ws_yolo_nas_cpp_ros2/src -p
 git clone https://github.com/Ar-Ray-code/yolo_nas_cpp_ros2.git ws_yolo_nas_cpp_ros2/src
-git clone git clone https://github.com/Ar-Ray-code/bbox_ex_msgs.git ws_yolo_nas_cpp_ros2/src
+git clone https://github.com/Ar-Ray-code/bbox_ex_msgs.git ws_yolo_nas_cpp_ros2/src
 cd ws_yolo_nas_cpp_ros2
 
 colcon build
