@@ -1,0 +1,45 @@
+yolo_nas_parameters:
+  imshow_isshow:
+    type: bool
+    description: "Enable or disable imshow."
+    default_value: false
+  model_path:
+    type: string
+    description: "Path to the model file."
+    default_value: "./yolo_nas_s.onnx"
+  class_labels_path:
+    type: string
+    description: "Path to the class labels file."
+    default_value: ""
+  num_classes:
+    type: int
+    description: "Number of classes."
+    default_value: 1
+  conf:
+    type: double
+    description: "Confidence threshold."
+    default_value: 0.3
+  nms:
+    type: double
+    description: "NMS threshold."
+    default_value: 0.45
+  model_width:
+    type: int
+    description: "Model width."
+    default_value: 640
+  model_height:
+    type: int
+    description: "Model height."
+    default_value: 640
+  src_image_topic_name:
+    type: string
+    description: "Source image topic name."
+    default_value: "image_raw"
+  publish_image_topic_name:
+    type: string
+    description: "Publish image topic name."
+    default_value: "yolo_nas/image_raw"
+  publish_boundingbox_topic_name:
+    type: string
+    description: "Publish bounding box topic name."
+    default_value: "yolo_nas/bounding_boxes"
